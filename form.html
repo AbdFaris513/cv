@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Forms Creation</h2>
+    <br><br>
+    <div align="center">
+        <label for="search">Search</label>
+        <input type="search" id="search">
+    </div>
+    <hr><br><br>
+        <form action="form2.html" method="get" enctype="multipart/form-data">
+            <div>
+                <label for="username">UserName:</label><br>
+                <input type="text" id="username" name="username">
+            </div><br>
+            <div>
+                <label for="Email">Email:</label><br>
+                <input type="email" id="Email" required>
+            </div><br>
+            <div>
+                <label for="Password">Password:</label><br>
+                <input type="password" id="Password" name="Password" minlength="8">
+            </div><br>
+            <div>
+                <label for="age">Age</label><br>
+                <input type="number" id="age" min="18" step="3">
+            </div><br>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" minlength="05-03-2021">
+            </div><br>
+            <div>
+                <label for="time">Work Hours:</label><br>
+                <input type="time" id="time">
+            </div><br>
+            <div>
+                <label for="week">Vaction Week:</label><br>
+                <input type="week" id="week">
+            </div><br>
+            <div>
+                <label for="range">Range:</label>
+                <input type="range" min="1000" max="10000" step="100" value="2000">
+            </div><br>
+            <div>
+                <label for="url">Twitter:</label><br>
+                <input type="url" id="url">
+            </div><br>
+            <div>
+                <label for="msg">Message:</label><br>
+                <textarea name="msg" id="msg" cols="21" rows="3" placeholder="Enter the Message.."></textarea>
+            </div><br>
+            <div>
+                <input type="radio" name="gender" id="male" value="male" checked="checked">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="male">
+                <label for="female">Female</label>
+            </div><br>
+            <div>
+                Select Your Hobbies: <br><br>
+                <input type="checkbox" name="hbi[]" value="Gaming" id="g"><label for="g">Gaming</label>
+                <input type="checkbox" name="hbi[]" value="Playing" id="p"><label for="p">Playing</label>
+                <input type="checkbox" name="hbi[]" value="Reading" id="r"><label for="r">Reading</label>
+                <input type="checkbox" name="hbi[]" value="Dancing" id="d"><label for="d">Dancing</label>
+                <input type="checkbox" name="hbi[]" value="Learning" id="l" checked="checked"><label for="l">Learning</label>
+            </div><br>
+            <div>
+                <select name="year" id="passout">
+                    <option value="">Choose</option>
+                    <option value="2021" selected>2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="Resume">Resume:</label><br>
+                <input type="file">
+            </div><br>
+            <div>
+                <input type="submit" name="submit" value="Login">
+                <!-- <button type="reset">Login</button> -->
+            </div>
+        </form>
+    
+</body>
+</html>
